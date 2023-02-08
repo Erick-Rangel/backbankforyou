@@ -10,11 +10,7 @@ app.set("port", process.env.PORT || 4000);
 app.use(
   cors({
     origin: [
-      "https://bankforyou.vercel.app",
       "https://solucionesintegralesentecnologia.com",      
-      "http://localhost:3000",
-      "https://localhost:3000",
-      "http://192.168.2.205:3000",
     ],
   })
 ); //cors hace q dos servidores se conecten entre ellos (back y front por ej)
